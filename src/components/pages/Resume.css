@@ -1,0 +1,107 @@
+.resume-container{
+    background-color: #555454;
+    border-radius: 30px;;
+    display:block;
+    margin-top: 50px;
+    text-align: center;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.1em;
+    /* align-items: center;
+    justify-content: center; */
+}
+.download-btn >a{
+    white-space: nowrap;
+    margin-left: 80%; 
+    margin-right: 0;   
+    text-decoration: none; 
+    background: #f5df4d;
+    color: #343434;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    transition:0.3s;
+}
+@media screen and (max-width:860px){
+    .download-btn >a{
+        margin-left:auto;
+    }
+}
+.download-btn{
+    margin:20px;
+}
+.name-section{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 3em;
+    font-family: 'Noto Serif JP';
+}
+.info-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 600px;
+    align-items: center;
+    margin: 0 auto;
+    color:rgb(243, 227, 156);
+}
+.section-container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width:700px;
+    align-items: center;
+    margin: 0 auto;
+}
+.section-title{
+    letter-spacing: 7px;
+    font-family: 'Montserrat';
+    margin-top:30px;
+    margin-bottom: 10px;
+    color:rgb(243, 227, 156);
+
+}
+.section-skills{
+    max-width: 530px;
+    align-items: center;
+    margin: 0 auto;
+}
+.section-skills .fab{
+    color: white;
+    padding: 0;
+    
+}
+
+.section-skills li{
+    display:inline;
+    padding:10px;
+}
+.section-text{
+    padding:10px;
+}
+.section-text li{
+    display: block;
+    padding: 0;
+}
+.school-deets{
+    font-style: italic;
+    color:rgb(194, 193, 193);
+    font-size: 0.95em;
+}
+@media screen and (max-width:520px){
+    .info-section{
+        display: block;
+        
+    }
+    .info-section p{
+        margin:0;
+    }
+    .resume-container{
+        font-size: 0.97em;
+    }
+}

@@ -1,0 +1,132 @@
+.project-container p{
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: #b6a748;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top:50px;
+   
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin: 50px 200px;
+
+    /* glass effect */
+    
+   
+}
+.cards-item{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    text-align: center;
+   
+    position: relative;
+   justify-content: center;
+   padding-bottom: 10px;
+    
+   
+}
+.card-image{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+.image{
+    
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    backface-visibility: hidden;
+}
+.middle{
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-image:hover .image{
+    opacity: 0.2;
+    box-shadow:20px 20px 50px rgba(0, 0 , 0, .5);
+}
+.card-image:hover .middle{
+    opacity: 1;
+}
+.card-text{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 1.7em;
+    margin: 10px 20px;
+    position: relative;
+    top:-20px;
+    width: 300px;
+    
+}
+.card-desc{
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: .65em;
+    word-wrap: break-word;
+    margin: 20px 0px;
+}
+button{
+    background: #f5df4d;
+    color: #343434;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    border: none;
+    padding:10px;
+    transition:0.3s;
+}
+.card-button > a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    background: #f5df4d;
+    color: #343434;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    transition:0.3s;
+    font-size: .5em;
+}
+.card-button > a:hover{
+    cursor: pointer;
+    background: white;
+    transform: scale(2);
+
+}
+@media screen and (max-width:850px){
+    .cards-container{
+        margin: 100px;
+    }
+}
+@media screen and (max-width:530px){
+    .cards-container{
+        margin: 100px 50px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .project-container{
+        margin:70px 5px;
+    }
+    .cards-container{
+        margin: 70px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .cards-item{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .card-text{
+        font-size: 1.4em;
+    }
+}

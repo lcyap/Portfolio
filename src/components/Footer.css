@@ -1,0 +1,32 @@
+.footer-container{
+    position:absolute;
+    width:100%;
+    
+    
+    
+    
+}
+.social-wrapper{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.social-icons{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    
+}
+
+.footer-container .fab{
+    color:#b6a748;
+    padding:10px;
+    transition: 0.3s;
+    
+}
+.footer-container .fab:hover{
+    color:white;
+    box-shadow:20px 20px 50px rgba(0, 0 , 0, .5);
+    border-radius: 50%;
+    cursor: pointer;
+}
