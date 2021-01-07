@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Resume.css'
 const Resume = () => {
     return (
@@ -6,7 +7,7 @@ const Resume = () => {
             
             <div className="resume-container">
                 <div className="download-btn">
-                    <a href="/"> Download Resume </a>
+                    <Link to="/Resume_LeaOdina.pdf" target="_blank" download>Download Resume</Link>
                 </div>
                 <div className="name-section">
                     Lea Odina

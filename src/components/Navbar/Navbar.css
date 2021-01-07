@@ -113,7 +113,7 @@
         left: 0%;
        overflow: hidden;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in-out;
         z-index: 3;
         position:fixed;
         width:100%;
@@ -122,7 +122,7 @@
     
       .nav-links {
         text-align: center;
-        padding: 1rem;
+        padding: 1rem 0px;
         width: 100%;
         display: table;
         /* margin-right:0px; */

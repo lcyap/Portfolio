@@ -113,6 +113,10 @@ button{
     .cards-container{
         margin: 100px 50px;
     }
+    .card-desc{
+        padding: 0px 5px;
+    }
+    
 }
 
 @media screen and (max-width:375px){
@@ -128,5 +132,8 @@ button{
     }
     .card-text{
         font-size: 1.4em;
+    }
+    .card-desc{
+        width:auto;
     }
 }
