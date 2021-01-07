@@ -75,7 +75,7 @@ const Resume = () => {
                 <div className="section-container">
                     <div className="section-title">---- WORK EXPERIENCE ----</div>
                     <div className="section-text">
-                        <table>
+                        {/* <table>
                             <tr> Compunding Technician
                                 <td>Mar 2015 - Sep 2020</td>
                             </tr>
@@ -88,7 +88,7 @@ const Resume = () => {
                                     </ul>
                                
                             
-                        </table>
+                        </table> */}
                     </div>
                 </div>
             </div>
