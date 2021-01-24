@@ -1,2 +1,3 @@
-My personal web portfolio created with React
-https://leaodina.netlify.app/
+## My Portfolio 
+- Developed with React
+- Live website: https://leaodina.netlify.app/
