@@ -33,6 +33,10 @@
 .download-btn{
     margin:20px;
 }
+.download-btn a:hover{
+    background: white;
+    
+}
 .name-section{
     display: block;
     align-items: center;
@@ -92,6 +96,13 @@
     font-style: italic;
     color:rgb(194, 193, 193);
     font-size: 0.95em;
+    
+}
+.work-deets{
+    max-width:400px;
+    align-items: left;
+    margin: 0 auto;
+    font-size: 0.90em;
 }
 @media screen and (max-width:520px){
     .info-section{

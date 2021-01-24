@@ -1,9 +1,25 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Resume.css'
+const pageTransition = {
+    in:{
+        opacity: 1, 
+       // x: 0
+     },
+     out:{
+         opacity:0,
+        // x: "-100%"
+     }
+}
 const Resume = () => {
     return (
-        <div>
+        <motion.div
+        initial ="out"
+        animate="in"
+        exit="out"
+        variants={pageTransition}
+        >
             
             <div className="resume-container">
                 <div className="download-btn">
@@ -76,24 +92,21 @@ const Resume = () => {
                 <div className="section-container">
                     <div className="section-title">---- WORK EXPERIENCE ----</div>
                     <div className="section-text">
-                        {/* <table>
-                            <tr> Compunding Technician
-                                <td>Mar 2015 - Sep 2020</td>
-                            </tr>
-                               
-                           
-                                 
-                                    <ul>
-                                        <li>asdasd</li>
-                                        <li>asdasd</li>
-                                    </ul>
-                               
-                            
-                        </table> */}
+                        <li>Compounding Technician</li>
+                        <div className="school-deets">
+                            <li>Lip Lab by Bite </li>
+                            <li>Mar 2015 - Sep 2020</li>
+                        </div>
+                        <div className="work-deets">
+                            <li>• Developed numerous operational procedures that improved workflow and efficiency </li>
+                            <li>• Performed strict quality checks and drafted trend reports in a timely manner  </li>
+                            <li>• Ensured accurate measurement of materials as per quality standards and company specifications</li>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

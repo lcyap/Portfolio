@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 function Navbar() {
@@ -8,10 +8,23 @@ function Navbar() {
 
     const closeMobileMenu = () => setClick(false);
 
+    const [scrollNav, setScrollNav] = useState(false);
+
+    const changeNav = ()=>{
+        if(window.scrollY > 50){
+            setScrollNav(true)
+        }else{
+            setScrollNav(false)
+        }
+    }
+    useEffect(()=>{
+        window.addEventListener('scroll', changeNav)
+    })
     return (
         <>
-        <nav className="navbar" >
-            <div className="navbar-container">
+        {/* transparent navbar on scroll */}
+        <nav className="navbar" style={{background: scrollNav ? '#343434' : 'transparent'}}> 
+              <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
                     L/O
                 </Link>
@@ -34,11 +47,11 @@ function Navbar() {
                             Resume
                         </Link>
                     </li>
-                    <li className='nav-item'>
+                    {/* <li className='nav-item'>
                         <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
                             Contact
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
 
             </div>

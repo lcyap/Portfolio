@@ -1,10 +1,11 @@
 .hero-section{
     display:block;
-    margin-top:80px;
+    /* margin-top:80px; */
     height:500px;
+    overflow-x: hidden;
 }
 .hero-container{
-    margin-top: 100px;
+    margin-top: 120px;
     display: block;
     
     height: 800px;

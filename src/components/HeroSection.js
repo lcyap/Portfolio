@@ -5,7 +5,7 @@ function HeroSection() {
         <div className='hero-section'>
             <div className='hero-container'>
                  <div className='big-text-container' >
-                    <p className='hero-big-text'>I AM LEA ODIÑA</p>
+                    <p className='hero-big-text'>I AM LEA ODINA</p>
                 </div>
             
             </div>
